@@ -1,0 +1,60 @@
+# For PCBs designed using KiCad: http://www.kicad-pcb.org/
+# Format documentation: http://kicad-pcb.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*.sch-bak
+*~
+\#auto_saved_files\#
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+_autosave*
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+
+
+#Libreoffice temp files
+.~lock*
+
+
+## ---- Custom ---- ##
+# Any Gerbers
+*.gbr
+*.gbrjob
+*.drl
+
+# Staging folder
+Fab-Out
+
+# Any zip (most boardhouses expect zipped gerbers)
+*.zip
+
+
+
+# EXCEPT for in the releases folder; store EVERYTHING put there.
+!Releases/**
+
+
+# Ignore What pinion is generating, except for YAML files (configuration)
+pinion/*
+!pinion/*.yaml
+
+
+

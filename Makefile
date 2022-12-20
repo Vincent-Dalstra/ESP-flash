@@ -1,7 +1,6 @@
 SHELL = /bin/sh
 
-
-prj := JLCPCB_2_Layer
+prj := $(basename $(wildcard *.kicad_pro))
 out := Fab-Out
 gout := ${out}/gerber
 
@@ -51,4 +50,16 @@ ${out}/bom.csv ${out}/pos.csv&: *.kicad_sch ${prj}.kicad_pcb
 	kikit fab jlcpcb ${ass-opts} --schematic ${prj}.kicad_sch ${prj}.kicad_pcb ${out}/
 
 
+
+# ----
+
+
+# pinion: Interactive boardview
+.PHONY: pinion view
+pinion view&: pinion/plotted/spec.json
+	pinion serve -b --directory pinion/plotted/
+	
+# 
+pinion/plotted/spec.json: pinion/spec.yaml
+	pinion generate --board puzzle-shield-ESP32.kicad_pcb --specification pinion/spec.yaml pinion/plotted --pack --libs ~/Documents/Electronics/Kicad-libraries/PcbDraw-Lib/KiCAD-base/
 
