@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "ESP-Flash")
+    (date "2023-01-03")
+    (rev "v1.1.0")
+    (company "OSH")
+    (comment 1 "Drawn by: VGD")
+  )
+
   (lib_symbols
     (symbol "Connector:USB_B_Micro" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at -5.08 11.43 0)
@@ -2949,6 +2957,9 @@
     (property "LCSC" "C83572" (id 4) (at 201.93 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (pin "1" (uuid a344d70b-e012-482c-80ce-46fd108f33d1))
+    (pin "2" (uuid 07c04c4f-d512-4d43-a608-2457f325690d))
+    (pin "6" (uuid 831cd3ca-13ba-4461-b844-9e9547f764bb))
     (pin "3" (uuid 3896fd04-1349-4cff-ad3a-76470e5d72b7))
     (pin "4" (uuid 21e4b831-3aa4-4522-975c-dda4b56d2417))
     (pin "5" (uuid 6532dcb8-7547-48d5-bf72-1f07e7d1fce6))
@@ -3035,13 +3046,16 @@
     (uuid 7fed758a-c76e-4f1a-8799-89d9d2a905c1)
     (property "Reference" "SW101" (id 0) (at 213.36 64.77 0))
     (property "Value" "SW_SPDT" (id 1) (at 213.36 67.31 0))
-    (property "Footprint" "Button_Switch_SMD:SW_SPDT_PCM12" (id 2) (at 213.36 72.39 0)
+    (property "Footprint" "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" (id 2) (at 213.36 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1808041445_ALPSALPINE-SSSS811101_C109335.pdf" (id 3) (at 213.36 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C109335" (id 4) (at 213.36 72.39 0)
+    (property "LCSC" "C125040" (id 4) (at 213.36 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPCB_CORRECTION" "0;-2.75;180" (id 5) (at 213.36 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3575bf0e-4765-418b-952f-633e0da73d9d))
@@ -3070,6 +3084,9 @@
     (pin "1" (uuid d6d8b1e6-9fde-4948-ada2-ec7c9c428e10))
     (pin "2" (uuid 137a6fe5-0399-434d-8f43-cc6a7969fa54))
     (pin "6" (uuid f7f0925a-cb6c-4bff-8875-55dde8aa5b0f))
+    (pin "3" (uuid 3cd4be74-7b41-4585-a271-7b959d24798a))
+    (pin "4" (uuid 284e0996-13ab-423b-88eb-cd06a619e66d))
+    (pin "5" (uuid d91047a8-7b17-4349-a398-aa4a127cfa74))
   )
 
   (symbol (lib_id "Device:R_US") (at 71.12 113.03 180) (unit 1)
@@ -3305,7 +3322,7 @@
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf" (id 3) (at 115.57 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C404027" (id 4) (at 115.57 40.64 0)
+    (property "LCSC" "C2937042" (id 4) (at 115.57 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB_CORRECTION" "0;0;180" (id 5) (at 115.57 40.64 0)
@@ -3565,7 +3582,7 @@
       (reference "R105") (unit 1) (value "10kΩ") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/7fed758a-c76e-4f1a-8799-89d9d2a905c1"
-      (reference "SW101") (unit 1) (value "SW_SPDT") (footprint "Button_Switch_SMD:SW_SPDT_PCM12")
+      (reference "SW101") (unit 1) (value "SW_SPDT") (footprint "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN")
     )
     (path "/e1bad162-1779-40d0-8d1a-a95bb6a2350e"
       (reference "U101") (unit 1) (value "ESD PROTECTION") (footprint "Package_TO_SOT_SMD:SOT-23-6")
