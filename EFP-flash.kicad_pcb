@@ -8,7 +8,7 @@
   (title_block
     (title "ESP-flash")
     (date "2023-01-03")
-    (rev "v1.2.0")
+    (rev "v1.1.0")
     (company "OSH")
     (comment 1 "Drawn by: VGD")
   )
@@ -2458,6 +2458,12 @@
 
   (gr_poly
     (pts
+      (xy 152.4 50.165)
+      (xy 152.4 51.435)
+      (xy 151.765 50.8)
+    ) (layer "B.SilkS") (width 0.15) (fill solid) (tstamp 034f06ef-eaf2-49cf-a5fc-191d86f4b2b3))
+  (gr_poly
+    (pts
       (xy 147.955 49.403)
       (xy 146.685 49.403)
       (xy 147.32 48.768)
@@ -2480,6 +2486,12 @@
       (xy 145.415 48.768)
       (xy 144.145 48.768)
     ) (layer "F.SilkS") (width 0.15) (fill solid) (tstamp 0f7744fa-2a48-45a2-87fa-7ef7f368fe89))
+  (gr_poly
+    (pts
+      (xy 151.765 50.8)
+      (xy 152.4 51.435)
+      (xy 152.4 50.165)
+    ) (layer "F.SilkS") (width 0.15) (fill solid) (tstamp c1214341-ac1e-4c54-bbbd-52098fae6dda))
   (gr_line (start 154.94 53.34) (end 154.94 35.56) (layer "Edge.Cuts") (width 0.1) (tstamp 0ddcbb54-42c4-46b4-b357-262127dc0129))
   (gr_arc (start 154.94 53.34) (mid 154.568026 54.238026) (end 153.67 54.61) (layer "Edge.Cuts") (width 0.1) (tstamp 139b6459-7a37-4043-803b-e85b9631b398))
   (gr_line (start 153.67 34.29) (end 125.73 34.29) (layer "Edge.Cuts") (width 0.1) (tstamp 4ff63288-3da3-4aff-9ecd-4b1d8be98d14))
