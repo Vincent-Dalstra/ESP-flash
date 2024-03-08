@@ -10,12 +10,13 @@
 *.kicad_prl
 *.sch-bak
 *~
+~*
 \#auto_saved_files\#
+_autosave-*
 *.tmp
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
-_autosave*
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -43,18 +44,15 @@ _autosave*
 # Staging folder
 Fab-Out
 
+# Image/3D exports
+export2D
+export3D
+
 # Any zip (most boardhouses expect zipped gerbers)
 *.zip
 
-
-
 # EXCEPT for in the releases folder; store EVERYTHING put there.
 !Releases/**
-
-
-# Ignore What pinion is generating, except for YAML files (configuration)
-pinion/*
-!pinion/*.yaml
 
 
 
