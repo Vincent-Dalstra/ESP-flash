@@ -5905,7 +5905,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "subsheet/usb.kicad_sch"
+		(property "Sheetfile" "usb.kicad_sch"
 			(at 35.56 117.4246 0)
 			(effects
 				(font
